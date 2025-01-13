@@ -1,0 +1,107 @@
+Card container
+.product-card {
+  width: 18rem;
+  margin: 50px;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden; /* Prevent overflow during scaling */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  border-radius: 8px; /* Smooth border rounding */
+  background-color: #fff;
+  border: 1px solid red; /* Add a border for visibility */
+
+}
+
+/* Card Image */
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensure the image covers the area */
+  border-bottom: 2px solid #ddd; /* Optional border at the bottom of the image */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+}
+
+/* Card Body */
+.card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1; /* Allow the body to expand */
+  height: 250px; /* Set a fixed height for consistency */
+  background-color: #fafafa;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-body .card-text {
+  margin-bottom: 5px; /* Reduce the space between text elements */
+  line-height: 1.2; /* Adjust line height for compactness */
+}
+
+
+
+/* Adjust the card body on hover */
+.card-body:hover {
+  transform: scale(1.05); /* Scale the card body on hover */
+}
+
+/* Title and Text Styling */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card-body small {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Button Styling */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 7px;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Hover effect on the card */
+.product-card:hover {
+  transform: scale(1.05); /* Scale the entire card */
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+  .product-card {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .card-body {
+    height: auto; /* Let the body grow on smaller screens */
+  }
+
+  .card-title {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+}

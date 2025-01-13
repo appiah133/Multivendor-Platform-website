@@ -1,0 +1,30 @@
+/* Navbar.css */
+
+.navbar {
+  background-color: #007bff;
+  padding: 40px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-menu {
+  list-style-type: none; /* Remove default bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px; /* Space between items */
+}
+
+.navbar-menu li {
+  display: inline; /* Ensure they appear in a row */
+  cursor: pointer;
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 40px; /* Font size */
+}
+
+.navbar-menu li:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: #d1e7ff; /* Light blue for hover effect */
+}
